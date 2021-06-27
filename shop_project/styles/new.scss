@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(202, 195, 187);
+  flex-wrap: wrap;
+  font-size: 1rem;
+  div.logo {
+    display: flex;
+    align-items: center;
+    flex: 5 1 400px;
+    margin-left: 2rem;
+    a {
+      text-decoration: none;
+      img {
+        min-width: 4vw;
+        max-height: 7vh;
+      }
+      h1 {
+        color: rgb(83, 23, 23);
+        padding: 0rem 1rem;
+      }
+    }
+  }
+  nav {
+    flex: 2 1 400px;
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      li {
+        a {
+          color: rgb(107, 81, 82);
+          text-decoration: none;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+main {
+  section.homepage {
+    margin-top: 2rem;
+    h2 {
+      font-size: 2rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      color: rgb(182, 113, 88);
+    }
+    p {
+      color: rgb(117, 72, 56);
+    }
+    div.card {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 2rem 8rem;
+      img {
+        width: 20vw;
+        height: 40vh;
+        padding: 1rem 1rem;
+        transition: all 0.2s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgb(183, 176, 166);
+  margin-top: 3rem;
+  div.footerlogo {
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+      h1 {
+        font-size: 1.5rem;
+        color: rgb(83, 23, 23);
+      }
+      img {
+        width: 3vw;
+        height: 5vh;
+      }
+    }
+  }
+  div.footerlink {
+    a {
+      img {
+        width: 3vw;
+        height: 5vh;
+        margin: 0.5rem 0.5rem;
+      }
+    }
+  }
+}
+@media screen and(max-width:700px) {
+  header {
+    nav {
+      ul {
+        li {
+          a {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+  main {
+    section.backImage {
+      min-height: 90vh;
+      width: 100%;
+      flex-direction: column;
+    }
+    section.homepage {
+      margin-top: 3rem;
+      div.card {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+          min-width: 60vw;
+          height: 50vh;
+        }
+      }
+    }
+    div.card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 20vw;
+        height: 40vh;
+      }
+    }
+  }
+}

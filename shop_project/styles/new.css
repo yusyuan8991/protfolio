@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #cac3bb;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 400px;
+          flex: 5 1 400px;
+  margin-left: 2rem;
+}
+
+header div.logo a {
+  text-decoration: none;
+}
+
+header div.logo a img {
+  min-width: 4vw;
+  max-height: 7vh;
+}
+
+header div.logo a h1 {
+  color: #531717;
+  padding: 0rem 1rem;
+}
+
+header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 400px;
+          flex: 2 1 400px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li a {
+  color: #6b5152;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+main section.homepage {
+  margin-top: 2rem;
+}
+
+main section.homepage h2 {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  color: #b67158;
+}
+
+main section.homepage p {
+  color: #754838;
+}
+
+main section.homepage div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 8rem;
+}
+
+main section.homepage div.card img {
+  width: 20vw;
+  height: 40vh;
+  padding: 1rem 1rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main section.homepage div.card img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer {
+  background-color: darkgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+  background-color: #b7b0a6;
+  margin-top: 3rem;
+}
+
+footer div.footerlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.footerlogo a {
+  text-decoration: none;
+}
+
+footer div.footerlogo a h1 {
+  font-size: 1.5rem;
+  color: #531717;
+}
+
+footer div.footerlogo a img {
+  width: 3vw;
+  height: 5vh;
+}
+
+footer div.footerlink a img {
+  width: 3vw;
+  height: 5vh;
+  margin: 0.5rem 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  header nav ul li a {
+    font-size: 1.25rem;
+  }
+  main section.backImage {
+    min-height: 90vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.homepage {
+    margin-top: 3rem;
+  }
+  main section.homepage div.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main section.homepage div.card img {
+    min-width: 60vw;
+    height: 50vh;
+  }
+  main div.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main div.card img {
+    width: 20vw;
+    height: 40vh;
+  }
+}
+/*# sourceMappingURL=new.css.map */
